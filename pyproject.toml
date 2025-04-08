@@ -1,0 +1,21 @@
+[project]
+name = "wi-analysis"
+version = "0.1.0"
+description = "A python project for scraping and analysing the Wandering Inn web serial."
+authors = [
+    {name = "JamesG9802",email = "61638683+JamesG9802@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)"
+]
+
+[tool.poetry]
+packages = [{include = "wi_analysis", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
