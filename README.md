@@ -6,6 +6,12 @@ This package is designed to scrape data from *The Wandering Inn* website, as of 
 
 Stats are available in `Stats/`.
 
+# Visuals
+
+<img src="visuals/[Level] Frequency.svg"/>
+<img src="visuals/Top Ten [Classes] in Innworld (Better Search).svg"/>
+<img src="visuals/Top 100 [Classes] in Innworld (Better Search).svg"/>
+
 # Usage
 
 This project uses Poetry for dependency management. 
@@ -37,11 +43,11 @@ Once all the chapters are downloaded, you can optionally run `clean.py` to strip
 will read the chapters from the `raw_database/` folder and output them to `clean_database/`.
 
 You can then analyze the chapters with `analyze.py`. It currently supports the following options:
-- `--colors` to find color data (only works on the raw HTML files).
+- `--color` to find color data (only works on the raw HTML files).
 - `--levels` to find all bracketed instances of levels, classes, and skills mentioned in the story.
 
 
 For example:
-`python src/w_analysis/analyze raw_database stats.json --colors`
+`python src/w_analysis/analyze raw_database stats.json --color`
 
 This will write color stats to the `stats.json` file.
