@@ -8,9 +8,10 @@ Stats are available in `Stats/`.
 
 # Visuals
 
-<img src="visuals/[Level] Frequency.svg"/>
-<img src="visuals/Top Ten [Classes] in Innworld (Better Search).svg"/>
-<img src="visuals/Top 100 [Classes] in Innworld (Better Search).svg"/>
+![Level Frequency](visuals/%5BLevel%5D%20Frequency.png)
+![Top Ten Classes](visuals/Top%20Ten%20%5BClasses%5D%20in%20Innworld.png)
+![Top 100 Classes](visuals/Top%20100%20%5BClasses%5D%20in%20Innworld.png)
+
 
 # Usage
 
