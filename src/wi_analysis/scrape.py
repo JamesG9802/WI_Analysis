@@ -147,10 +147,10 @@ def main():
         else:
             database_filepath = DEFAULT_DATABASE_PATH
 
-    if should_refetch or not path.isfile(path.join(database_filepath, TABLE_OF_CONTENTS_FILE_NAME)):
-        download(config["table_of_contents"], path.join(database_filepath, TABLE_OF_CONTENTS_FILE_NAME))
+    if should_refetch or not path.isfile(TABLE_OF_CONTENTS_FILE_NAME):
+        download(config["table_of_contents"], TABLE_OF_CONTENTS_FILE_NAME)
 
-    urls = get_chapter_urls(path.join(database_filepath, TABLE_OF_CONTENTS_FILE_NAME))
+    urls = get_chapter_urls(TABLE_OF_CONTENTS_FILE_NAME)
 
     if start_index == None:
         start_index = 0
